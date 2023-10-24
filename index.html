@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="style.css">
     <style>
         body{
-            background-color: grey;
+            background-color: whitesmoke;
             justify-content: center;
             align-items: center;
             text-align: center;
@@ -17,30 +17,81 @@
         }
 
         nav ul li {
-            list font-style: animation: ;
+            list-style-type: none;  /* Corrected from the original typo */
         }
         
         header{
             color: black;
             top :0;
             text-align: center;
-text
         }
-        main{padding: 20px;}
+        main{
+            padding: 0px;
+        }
         
-        article{width: 500px;
-        color: black;
+        article{
+            width: 50px;
+            color: black;
         }
 
+        table {
+            border-collapse: collapse; 
+            width: 30%;
+        }
+
+        table, th, td {
+            border: 1px solid red;
+            border-style: groove;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        thead{
+            border width: 30px;
+            border padding: 30px;
+        }
     </style>
-
-
 </head>
 
 <body>
 <header> <h1>Test Test</h1></header>
 
+<table>
+    <thead>
+        <tr>
+            <th>Version</th>
+            <th>Year</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>HTML</td>
+            <td>1991</td>
+        </tr>
+        <tr>
+            <td>HTML 2.0</td>
+            <td>1995</td>
+        </tr>
+        <tr>
+            <td>HTML 3.2</td>
+            <td>1997</td>
+        </tr>
+        <tr>
+            <td>HTML 4.01</td>
+            <td>1999</td>
+        </tr>
+        <tr>
+            <td>XHTML</td>
+            <td>2000</td>
+        </tr>
+        <tr>
+            <td>HTML5</td>
+            <td>2014</td>
+        </tr>
+    </tbody>
+</table>
+
 </body>
-
-
 </html>
